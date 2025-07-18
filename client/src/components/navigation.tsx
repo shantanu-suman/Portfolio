@@ -80,7 +80,7 @@ export default function Navigation() {
                   onClick={() => scrollToSection("leadership")}
                   className="hover:text-accent transition-colors duration-200"
                 >
-                  Leadership
+                  Experience
                 </button>
                 <button
                   onClick={() => scrollToSection("contact")}
@@ -139,7 +139,7 @@ export default function Navigation() {
                 onClick={() => scrollToSection("leadership")}
                 className="block w-full text-left px-3 py-2 hover:text-accent transition-colors duration-200"
               >
-                Leadership
+                Experience
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
