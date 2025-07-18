@@ -3,51 +3,51 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(240, 10%, 3.9%);
+  --background: hsl(217, 33%, 17%);
   --foreground: hsl(0, 0%, 98%);
-  --muted: hsl(240, 3.7%, 15.9%);
-  --muted-foreground: hsl(240, 5%, 64.9%);
-  --popover: hsl(240, 10%, 3.9%);
+  --muted: hsl(217, 33%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(217, 33%, 17%);
   --popover-foreground: hsl(0, 0%, 98%);
-  --card: hsl(240, 10%, 3.9%);
+  --card: hsl(217, 33%, 17%);
   --card-foreground: hsl(0, 0%, 98%);
-  --border: hsl(240, 3.7%, 15.9%);
-  --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(220, 91%, 13%);
+  --border: hsl(215, 28%, 25%);
+  --input: hsl(215, 28%, 25%);
+  --primary: hsl(217, 33%, 17%);
   --primary-foreground: hsl(0, 0%, 98%);
-  --secondary: hsl(220, 14%, 18%);
+  --secondary: hsl(215, 28%, 25%);
   --secondary-foreground: hsl(0, 0%, 98%);
-  --accent: hsl(217, 91%, 60%);
-  --accent-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(178, 100%, 50%);
+  --accent-foreground: hsl(217, 33%, 17%);
   --destructive: hsl(0, 62.8%, 30.6%);
   --destructive-foreground: hsl(0, 0%, 98%);
   --ring: hsl(240, 4.9%, 83.9%);
   --radius: 0.5rem;
-  --highlight: hsl(188, 94%, 42%);
+  --highlight: hsl(178, 100%, 50%);
 }
 
 .dark {
-  --background: hsl(240, 10%, 3.9%);
+  --background: hsl(217, 33%, 17%);
   --foreground: hsl(0, 0%, 98%);
-  --muted: hsl(240, 3.7%, 15.9%);
-  --muted-foreground: hsl(240, 5%, 64.9%);
-  --popover: hsl(240, 10%, 3.9%);
+  --muted: hsl(217, 33%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(217, 33%, 17%);
   --popover-foreground: hsl(0, 0%, 98%);
-  --card: hsl(240, 10%, 3.9%);
+  --card: hsl(217, 33%, 17%);
   --card-foreground: hsl(0, 0%, 98%);
-  --border: hsl(240, 3.7%, 15.9%);
-  --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(220, 91%, 13%);
+  --border: hsl(215, 28%, 25%);
+  --input: hsl(215, 28%, 25%);
+  --primary: hsl(217, 33%, 17%);
   --primary-foreground: hsl(0, 0%, 98%);
-  --secondary: hsl(220, 14%, 18%);
+  --secondary: hsl(215, 28%, 25%);
   --secondary-foreground: hsl(0, 0%, 98%);
-  --accent: hsl(217, 91%, 60%);
-  --accent-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(178, 100%, 50%);
+  --accent-foreground: hsl(217, 33%, 17%);
   --destructive: hsl(0, 62.8%, 30.6%);
   --destructive-foreground: hsl(0, 0%, 98%);
   --ring: hsl(240, 4.9%, 83.9%);
   --radius: 0.5rem;
-  --highlight: hsl(188, 94%, 42%);
+  --highlight: hsl(178, 100%, 50%);
 }
 
 @layer base {
@@ -67,7 +67,7 @@
 
 @layer components {
   .gradient-text {
-    background: linear-gradient(45deg, hsl(217, 91%, 60%), hsl(188, 94%, 42%));
+    background: linear-gradient(45deg, hsl(178, 100%, 50%), hsl(200, 100%, 50%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

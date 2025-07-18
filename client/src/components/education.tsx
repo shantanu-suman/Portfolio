@@ -28,26 +28,26 @@ export default function Education() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold gradient-text mb-4">Education</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-accent via-highlight to-accent mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent mx-auto"></div>
         </div>
         
         <div className="space-y-8">
           {education.map((edu, index) => (
             <div key={index} className="relative bg-secondary/50 rounded-xl p-8 hover:bg-secondary/70 transition-all duration-300">
               <div className={`absolute top-8 left-8 w-4 h-4 rounded-full ${
-                edu.color === "accent" ? "bg-accent" : "bg-[hsl(188,94%,42%)]"
+                edu.color === "accent" ? "bg-accent" : "bg-accent"
               }`}></div>
               <div className={`ml-8 pl-8 border-l-2 ${
-                edu.color === "accent" ? "border-accent/30" : "border-[hsl(188,94%,42%)]/30"
+                edu.color === "accent" ? "border-accent/30" : "border-accent/30"
               }`}>
                 <h3 className="text-2xl font-bold text-white mb-2">{edu.institution}</h3>
                 <p className={`font-semibold mb-2 ${
-                  edu.color === "accent" ? "text-accent" : "text-[hsl(188,94%,42%)]"
+                  edu.color === "accent" ? "text-accent" : "text-accent"
                 }`}>
                   {edu.degree}
                 </p>
                 <p className="text-slate-400 mb-4">{edu.duration}</p>
-                <p className="text-lg font-semibold text-[hsl(188,94%,42%)]">{edu.grade}</p>
+                <p className="text-lg font-semibold text-accent">{edu.grade}</p>
               </div>
             </div>
           ))}

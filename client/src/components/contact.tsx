@@ -60,7 +60,7 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold gradient-text mb-4">Get In Touch</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-accent via-highlight to-accent mx-auto mb-8"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent mx-auto mb-8"></div>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
             I'm currently open to new opportunities and collaborations. Whether you have a project in mind, 
             a question, or just want to say hi, my inbox is always open. I'll try my best to get back to you!
@@ -103,7 +103,7 @@ export default function Contact() {
             <div className="text-center mt-8">
               <a
                 href="mailto:aditiarya1511@gmail.com"
-                className="bg-accent hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 inline-flex items-center gap-2"
+                className="bg-accent hover:bg-accent/80 text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 inline-flex items-center gap-2"
               >
                 <Mail size={20} />
                 Say Hello
@@ -156,7 +156,7 @@ export default function Contact() {
               <Button
                 type="submit"
                 disabled={contactMutation.isPending}
-                className="w-full bg-accent hover:bg-blue-600 text-white font-semibold transition-all duration-300 hover:scale-105"
+                className="w-full bg-accent hover:bg-accent/80 text-primary font-semibold transition-all duration-300 hover:scale-105"
               >
                 {contactMutation.isPending ? (
                   "Sending..."

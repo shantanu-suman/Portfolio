@@ -52,13 +52,13 @@ export default function TechStack() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold gradient-text mb-4">My Tech Arsenal</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-accent via-highlight to-accent mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent mx-auto"></div>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {techCategories.map((category, index) => (
             <div key={index} className="bg-primary/50 rounded-xl p-8 hover:bg-primary/70 transition-all duration-300 group">
-              <h3 className="text-2xl font-bold text-accent mb-6 group-hover:text-[hsl(188,94%,42%)] transition-colors flex items-center gap-3">
+              <h3 className="text-2xl font-bold text-accent mb-6 group-hover:text-accent/80 transition-colors flex items-center gap-3">
                 {category.icon}
                 {category.title}
               </h3>

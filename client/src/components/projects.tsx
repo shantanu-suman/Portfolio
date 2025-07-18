@@ -77,7 +77,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold gradient-text mb-4">My Creations</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-accent via-highlight to-accent mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent mx-auto"></div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -113,7 +113,7 @@ export default function Projects() {
                     href={project.links.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-accent hover:text-[hsl(188,94%,42%)] transition-colors flex items-center gap-1"
+                    className="text-accent hover:text-accent/80 transition-colors flex items-center gap-1"
                   >
                     <Github size={16} />
                     Code
@@ -123,7 +123,7 @@ export default function Projects() {
                       href={project.links.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[hsl(188,94%,42%)] hover:text-accent transition-colors flex items-center gap-1"
+                      className="text-accent hover:text-accent/80 transition-colors flex items-center gap-1"
                     >
                       <ExternalLink size={16} />
                       Live
