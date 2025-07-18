@@ -41,7 +41,7 @@ export default function Navigation() {
                 onClick={() => scrollToSection("home")}
                 className="text-xl font-bold gradient-text"
               >
-                Aditi Arya
+                Shantanu Suman
               </button>
             </div>
             <div className="hidden md:block">

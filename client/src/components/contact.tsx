@@ -76,7 +76,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white">Email</h3>
-                <p className="text-slate-400">aditiarya1511@gmail.com</p>
+                <p className="text-slate-400">shantanu.suman@gmail.com</p>
               </div>
             </div>
             
@@ -86,7 +86,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white">LinkedIn</h3>
-                <p className="text-slate-400">linkedin.com/in/aditiarya37</p>
+                <p className="text-slate-400">linkedin.com/in/shantanusuman</p>
               </div>
             </div>
             
@@ -96,13 +96,13 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white">GitHub</h3>
-                <p className="text-slate-400">github.com/aditiarya37</p>
+                <p className="text-slate-400">github.com/shantanusuman</p>
               </div>
             </div>
             
             <div className="text-center mt-8">
               <a
-                href="mailto:aditiarya1511@gmail.com"
+                href="mailto:shantanu.suman@gmail.com"
                 className="bg-accent hover:bg-accent/80 text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 inline-flex items-center gap-2"
               >
                 <Mail size={20} />

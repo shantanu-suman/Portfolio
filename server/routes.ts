@@ -25,7 +25,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       const mailOptions = {
         from: process.env.EMAIL_USER || 'your-email@gmail.com',
-        to: 'aditiarya1511@gmail.com',
+        to: 'shantanu.suman@gmail.com',
         subject: `New Contact Form Message from ${validatedData.name}`,
         text: `
           Name: ${validatedData.name}

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack portfolio website built with React and Express.js, featuring a modern dark theme design with smooth animations and responsive layout. The application serves as a personal portfolio showcasing projects, skills, education, and leadership experience, with an integrated contact form system.
+This is a full-stack portfolio website built with React and Express.js, featuring a modern dark theme design with smooth animations and responsive layout. The application serves as a personal portfolio for Shantanu Suman showcasing projects, skills, education, and leadership experience, with an integrated contact form system.
 
 ## User Preferences
 

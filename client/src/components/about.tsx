@@ -10,14 +10,14 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-slate-300 leading-relaxed">
-              Hello! I'm Aditi, a driven Full Stack Developer with a strong foundation in computer science 
+              Hello! I'm Shantanu, a driven Full Stack Developer with a strong foundation in computer science 
               and a knack for crafting efficient, user-centric applications. My journey into tech is fueled 
               by a desire to learn, innovate, and contribute to projects that make a difference.
             </p>
             <p className="text-lg text-slate-300 leading-relaxed">
               I thrive in collaborative environments and am always excited to tackle new challenges. 
-              With a CGPA of 8.17/10 and experience in 15+ hackathons, I bring both academic excellence 
-              and practical problem-solving skills to every project.
+              With strong academic performance and experience in multiple technical projects, I bring both 
+              theoretical knowledge and practical problem-solving skills to every project.
             </p>
             <div className="flex flex-wrap gap-3 mt-6">
               <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Problem Solving</span>
@@ -31,20 +31,20 @@ export default function About() {
             <div className="bg-gradient-to-br from-accent/20 to-[hsl(188,94%,42%)]/20 rounded-2xl p-8 backdrop-blur-sm">
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="bg-primary/50 rounded-lg p-4">
-                  <h3 className="text-2xl font-bold text-accent">15+</h3>
-                  <p className="text-sm text-slate-400">Hackathons</p>
-                </div>
-                <div className="bg-primary/50 rounded-lg p-4">
-                  <h3 className="text-2xl font-bold text-accent">8.17</h3>
-                  <p className="text-sm text-slate-400">CGPA</p>
-                </div>
-                <div className="bg-primary/50 rounded-lg p-4">
-                  <h3 className="text-2xl font-bold text-accent">5+</h3>
+                  <h3 className="text-2xl font-bold text-accent">10+</h3>
                   <p className="text-sm text-slate-400">Projects</p>
                 </div>
                 <div className="bg-primary/50 rounded-lg p-4">
-                  <h3 className="text-2xl font-bold text-accent">2nd</h3>
-                  <p className="text-sm text-slate-400">AMCAT Rank</p>
+                  <h3 className="text-2xl font-bold text-accent">3+</h3>
+                  <p className="text-sm text-slate-400">Years Experience</p>
+                </div>
+                <div className="bg-primary/50 rounded-lg p-4">
+                  <h3 className="text-2xl font-bold text-accent">5+</h3>
+                  <p className="text-sm text-slate-400">Technologies</p>
+                </div>
+                <div className="bg-primary/50 rounded-lg p-4">
+                  <h3 className="text-2xl font-bold text-accent">100%</h3>
+                  <p className="text-sm text-slate-400">Dedication</p>
                 </div>
               </div>
             </div>

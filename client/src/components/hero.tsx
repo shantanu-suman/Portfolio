@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="animate-fade-in">
           <p className="text-accent text-lg mb-4">Hi, my name is</p>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
-            <span className="gradient-text">Aditi Arya</span>
+            <span className="gradient-text">Shantanu Suman</span>
           </h1>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-300 mb-8">
             I build things for the web.
@@ -43,10 +43,10 @@ export default function Hero() {
               View My Work
             </button>
             <a
-              href="/AditiAryaResume.pdf"
+              href="/ShantanuSumanResume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2"
+              className="border border-accent text-accent hover:bg-accent hover:text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2"
             >
               <Download size={20} />
               Download CV
@@ -56,7 +56,7 @@ export default function Hero() {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a
-              href="https://linkedin.com/in/aditiarya37"
+              href="https://linkedin.com/in/shantanusuman"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-accent transition-colors duration-200"
@@ -64,7 +64,7 @@ export default function Hero() {
               <Linkedin size={24} />
             </a>
             <a
-              href="https://github.com/aditiarya37"
+              href="https://github.com/shantanusuman"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-accent transition-colors duration-200"
@@ -72,7 +72,7 @@ export default function Hero() {
               <Github size={24} />
             </a>
             <a
-              href="mailto:aditiarya1511@gmail.com"
+              href="mailto:shantanu.suman@gmail.com"
               className="text-slate-400 hover:text-accent transition-colors duration-200"
             >
               <Mail size={24} />
