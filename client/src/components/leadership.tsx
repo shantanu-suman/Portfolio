@@ -1,4 +1,5 @@
 import { CheckCircle, Trophy, Users, Calendar } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Leadership() {
   const experiences = [
@@ -48,35 +49,82 @@ export default function Leadership() {
         
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-primary/50 rounded-xl p-8 hover:bg-primary/70 transition-all duration-300">
+            <motion.div 
+              key={index} 
+              className="bg-primary/50 rounded-xl p-8 hover:bg-primary/70 transition-all duration-300"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.02 }}
+            >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                 <div className="flex items-center gap-4">
-                  <div className="text-accent">
+                  <motion.div 
+                    className="text-accent"
+                    whileHover={{ scale: 1.2, rotate: 360 }}
+                    transition={{ duration: 0.5 }}
+                  >
                     {exp.icon}
-                  </div>
+                  </motion.div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">{exp.title}</h3>
-                    <p className="text-accent font-semibold">{exp.organization}</p>
+                    <motion.h3 
+                      className="text-2xl font-bold text-white mb-2"
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.4, delay: index * 0.2 + 0.2 }}
+                      viewport={{ once: true }}
+                    >
+                      {exp.title}
+                    </motion.h3>
+                    <motion.p 
+                      className="text-accent font-semibold"
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.4, delay: index * 0.2 + 0.3 }}
+                      viewport={{ once: true }}
+                    >
+                      {exp.organization}
+                    </motion.p>
                   </div>
                 </div>
-                <p className="text-slate-400 mt-2 md:mt-0">{exp.duration}</p>
+                <motion.p 
+                  className="text-slate-400 mt-2 md:mt-0"
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.2 + 0.4 }}
+                  viewport={{ once: true }}
+                >
+                  {exp.duration}
+                </motion.p>
               </div>
               
               <ul className="space-y-3">
                 {exp.achievements.map((achievement, achievementIndex) => (
-                  <li key={achievementIndex} className="flex items-start gap-3">
-                    <div className="text-accent mt-1">
-                      {exp.title === "AMCAT 2nd Rank Holder" ? (
+                  <motion.li 
+                    key={achievementIndex} 
+                    className="flex items-start gap-3"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.2 + achievementIndex * 0.1 + 0.5 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.02 }}
+                  >
+                    <motion.div 
+                      className="text-accent mt-1"
+                      whileHover={{ scale: 1.2 }}
+                    >
+                      {exp.title === "Rising Inventor Award" ? (
                         <Trophy size={20} className="text-yellow-500" />
                       ) : (
                         <CheckCircle size={20} />
                       )}
-                    </div>
+                    </motion.div>
                     <span className="text-slate-300 leading-relaxed">{achievement}</span>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

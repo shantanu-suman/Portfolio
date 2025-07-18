@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Education() {
   const education = [
     {
@@ -40,23 +42,67 @@ export default function Education() {
         
         <div className="space-y-8">
           {education.map((edu, index) => (
-            <div key={index} className="relative bg-secondary/50 rounded-xl p-8 hover:bg-secondary/70 transition-all duration-300">
-              <div className={`absolute top-8 left-8 w-4 h-4 rounded-full ${
-                edu.color === "accent" ? "bg-accent" : "bg-accent"
-              }`}></div>
+            <motion.div 
+              key={index} 
+              className="relative bg-secondary/50 rounded-xl p-8 hover:bg-secondary/70 transition-all duration-300"
+              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.02 }}
+            >
+              <motion.div 
+                className={`absolute top-8 left-8 w-4 h-4 rounded-full ${
+                  edu.color === "accent" ? "bg-accent" : "bg-accent"
+                }`}
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ duration: 0.4, delay: index * 0.2 + 0.3 }}
+                viewport={{ once: true }}
+              ></motion.div>
               <div className={`ml-8 pl-8 border-l-2 ${
                 edu.color === "accent" ? "border-accent/30" : "border-accent/30"
               }`}>
-                <h3 className="text-2xl font-bold text-white mb-2">{edu.institution}</h3>
-                <p className={`font-semibold mb-2 ${
-                  edu.color === "accent" ? "text-accent" : "text-accent"
-                }`}>
+                <motion.h3 
+                  className="text-2xl font-bold text-white mb-2"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.2 + 0.4 }}
+                  viewport={{ once: true }}
+                >
+                  {edu.institution}
+                </motion.h3>
+                <motion.p 
+                  className={`font-semibold mb-2 ${
+                    edu.color === "accent" ? "text-accent" : "text-accent"
+                  }`}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.2 + 0.5 }}
+                  viewport={{ once: true }}
+                >
                   {edu.degree}
-                </p>
-                <p className="text-slate-400 mb-4">{edu.duration}</p>
-                <p className="text-lg font-semibold text-accent">{edu.grade}</p>
+                </motion.p>
+                <motion.p 
+                  className="text-slate-400 mb-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.2 + 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  {edu.duration}
+                </motion.p>
+                <motion.p 
+                  className="text-lg font-semibold text-accent"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.2 + 0.7 }}
+                  viewport={{ once: true }}
+                >
+                  {edu.grade}
+                </motion.p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

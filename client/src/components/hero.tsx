@@ -1,4 +1,5 @@
 import { Download, ArrowDown, Linkedin, Github, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -20,65 +21,108 @@ export default function Hero() {
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="animate-fade-in">
-          <p className="text-accent text-lg mb-4">Hi, my name is</p>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <motion.p 
+            className="text-accent text-lg mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            Hi, my name is
+          </motion.p>
+          <motion.h1 
+            className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
             <span className="gradient-text">Shantanu Suman</span>
-          </h1>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-300 mb-8">
-            I build things for the web.
-          </h2>
-          <p className="text-lg sm:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Innovative Full Stack Developer passionate about creating seamless and impactful web solutions. 
-            Eager to leverage modern technologies to solve real-world problems and contribute to dynamic team environments.
-          </p>
+          </motion.h1>
+          <motion.h2 
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-300 mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            I build industrial automation solutions.
+          </motion.h2>
+          <motion.p 
+            className="text-lg sm:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            Senior Software Developer with 7+ years of experience in Industrial automation and ADAS development. 
+            Specialized in C++ development with a passion for innovation and patent-worthy solutions.
+          </motion.p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button
+          <motion.div 
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.0 }}
+          >
+            <motion.button
               onClick={() => scrollToSection("projects")}
               className="bg-accent hover:bg-accent/80 text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 flex items-center gap-2"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <ArrowDown size={20} />
               View My Work
-            </button>
-            <a
+            </motion.button>
+            <motion.a
               href="/ShantanuSumanResume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-accent text-accent hover:bg-accent hover:text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <Download size={20} />
               Download CV
-            </a>
-          </div>
+            </motion.a>
+          </motion.div>
           
           {/* Social Links */}
-          <div className="flex justify-center space-x-6">
-            <a
+          <motion.div 
+            className="flex justify-center space-x-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+          >
+            <motion.a
               href="https://linkedin.com/in/shantanusuman"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-accent transition-colors duration-200"
+              whileHover={{ scale: 1.2, color: "#22d3ee" }}
             >
               <Linkedin size={24} />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="https://github.com/shantanusuman"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-accent transition-colors duration-200"
+              whileHover={{ scale: 1.2, color: "#22d3ee" }}
             >
               <Github size={24} />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="mailto:shantanu.suman@gmail.com"
               className="text-slate-400 hover:text-accent transition-colors duration-200"
+              whileHover={{ scale: 1.2, color: "#22d3ee" }}
             >
               <Mail size={24} />
-            </a>
-          </div>
-        </div>
+            </motion.a>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

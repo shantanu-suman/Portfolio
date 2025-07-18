@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,42 +47,90 @@ export default function Navigation() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <button
+                <motion.button
                   onClick={() => scrollToSection("home")}
-                  className="hover:text-accent transition-colors duration-200"
+                  className="hover:text-accent transition-colors duration-200 relative"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   Home
-                </button>
-                <button
+                  <motion.div
+                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent origin-left"
+                    initial={{ scaleX: 0 }}
+                    whileHover={{ scaleX: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.button>
+                <motion.button
                   onClick={() => scrollToSection("about")}
-                  className="hover:text-accent transition-colors duration-200"
+                  className="hover:text-accent transition-colors duration-200 relative"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   About
-                </button>
-                <button
+                  <motion.div
+                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent origin-left"
+                    initial={{ scaleX: 0 }}
+                    whileHover={{ scaleX: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.button>
+                <motion.button
                   onClick={() => scrollToSection("tech")}
-                  className="hover:text-accent transition-colors duration-200"
+                  className="hover:text-accent transition-colors duration-200 relative"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   Tech Stack
-                </button>
-                <button
+                  <motion.div
+                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent origin-left"
+                    initial={{ scaleX: 0 }}
+                    whileHover={{ scaleX: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.button>
+                <motion.button
                   onClick={() => scrollToSection("projects")}
-                  className="hover:text-accent transition-colors duration-200"
+                  className="hover:text-accent transition-colors duration-200 relative"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   Projects
-                </button>
-                <button
+                  <motion.div
+                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent origin-left"
+                    initial={{ scaleX: 0 }}
+                    whileHover={{ scaleX: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.button>
+                <motion.button
                   onClick={() => scrollToSection("leadership")}
-                  className="hover:text-accent transition-colors duration-200"
+                  className="hover:text-accent transition-colors duration-200 relative"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   Experience
-                </button>
-                <button
+                  <motion.div
+                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent origin-left"
+                    initial={{ scaleX: 0 }}
+                    whileHover={{ scaleX: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.button>
+                <motion.button
                   onClick={() => scrollToSection("education")}
-                  className="hover:text-accent transition-colors duration-200"
+                  className="hover:text-accent transition-colors duration-200 relative"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   Education
-                </button>
+                  <motion.div
+                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent origin-left"
+                    initial={{ scaleX: 0 }}
+                    whileHover={{ scaleX: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </motion.button>
                 <button
                   onClick={() => scrollToSection("contact")}
                   className="hover:text-accent transition-colors duration-200"

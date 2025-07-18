@@ -1,4 +1,5 @@
 import { Code, Layers, Settings } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function TechStack() {
   const techCategories = [
@@ -57,34 +58,71 @@ export default function TechStack() {
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {techCategories.map((category, index) => (
-            <div key={index} className="bg-primary/50 rounded-xl p-8 hover:bg-primary/70 transition-all duration-300 group">
+            <motion.div 
+              key={index} 
+              className="bg-primary/50 rounded-xl p-8 hover:bg-primary/70 transition-all duration-300 group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.02 }}
+            >
               <h3 className="text-2xl font-bold text-accent mb-6 group-hover:text-accent/80 transition-colors flex items-center gap-3">
-                {category.icon}
+                <motion.div whileHover={{ scale: 1.2, rotate: 360 }} transition={{ duration: 0.5 }}>
+                  {category.icon}
+                </motion.div>
                 {category.title}
               </h3>
               <div className="space-y-4">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="flex items-center space-x-3">
-                    <span className="text-lg">{skill.icon}</span>
+                  <motion.div 
+                    key={skillIndex} 
+                    className="flex items-center space-x-3 p-2 rounded-lg hover:bg-accent/10 transition-colors cursor-pointer"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.2 + skillIndex * 0.1 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <motion.span 
+                      className="text-lg"
+                      whileHover={{ scale: 1.3 }}
+                    >
+                      {skill.icon}
+                    </motion.span>
                     <span className="text-slate-300">{skill.name}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Core Competencies */}
-        <div className="bg-primary/30 rounded-xl p-8">
+        <motion.div 
+          className="bg-primary/30 rounded-xl p-8"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
           <h3 className="text-2xl font-bold gradient-text mb-6 text-center">Core Competencies</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {coreCompetencies.map((competency, index) => (
-              <div key={index} className="bg-accent/20 text-accent px-4 py-3 rounded-lg text-center font-semibold">
+              <motion.div 
+                key={index} 
+                className="bg-accent/20 text-accent px-4 py-3 rounded-lg text-center font-semibold hover:bg-accent/30 transition-colors cursor-pointer"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+              >
                 {competency}
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
