@@ -1,25 +1,32 @@
 export default function Education() {
   const education = [
     {
-      institution: "Chandigarh University",
-      degree: "Bachelor of Engineering in Computer Science",
-      duration: "Aug 2023 – Present",
-      grade: "CGPA: 8.17/10",
+      institution: "Bits Pilani",
+      degree: "M.Tech in Data Science",
+      duration: "November 2023 – Present",
+      grade: "In Progress",
       color: "accent"
     },
     {
-      institution: "Namdev Public School",
-      degree: "Class 12th CBSE",
-      duration: "April 2022 - May 2023",
-      grade: "96.5%",
+      institution: "RVCE, Bengaluru",
+      degree: "B.E in Electrical and Electronics Engineering",
+      duration: "August 2012 – May 2016",
+      grade: "CGPA: 8.4/10",
       color: "highlight"
     },
     {
-      institution: "Namdev Public School",
-      degree: "Class 10th CBSE",
-      duration: "April 2020 - May 2021",
-      grade: "95.17%",
+      institution: "Sree Ayyappa Public School, Bokaro Steel City",
+      degree: "Senior School Certificate Examination",
+      duration: "July 2010 – April 2012",
+      grade: "91.2%",
       color: "accent"
+    },
+    {
+      institution: "St. Joseph's Public School, Samastipur",
+      degree: "Secondary School Certificate",
+      duration: "March 2008 – April 2009",
+      grade: "89%",
+      color: "highlight"
     }
   ];
 

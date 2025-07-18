@@ -10,20 +10,20 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-slate-300 leading-relaxed">
-              Hello! I'm Shantanu, a driven Full Stack Developer with a strong foundation in computer science 
-              and a knack for crafting efficient, user-centric applications. My journey into tech is fueled 
-              by a desire to learn, innovate, and contribute to projects that make a difference.
+              Hello! I'm Shantanu, a passionate Senior Software Developer with over 7 years of experience in 
+              Industrial automation and ADAS development. With specialization in C++ development and a strong 
+              academic background, I create innovative solutions that make a real impact.
             </p>
             <p className="text-lg text-slate-300 leading-relaxed">
-              I thrive in collaborative environments and am always excited to tackle new challenges. 
-              With strong academic performance and experience in multiple technical projects, I bring both 
-              theoretical knowledge and practical problem-solving skills to every project.
+              Currently pursuing M.Tech in Data Science at BITS Pilani while working at Siemens, I'm constantly 
+              learning and exploring new technologies. I'm recognized as a Rising Inventor for my patent contributions 
+              and have received awards for proactive contributions in CAN gateway development.
             </p>
             <div className="flex flex-wrap gap-3 mt-6">
-              <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Problem Solving</span>
-              <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Team Leadership</span>
-              <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Full Stack Development</span>
-              <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Agile Methodologies</span>
+              <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Industrial Automation</span>
+              <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">ADAS Development</span>
+              <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">C++ Development</span>
+              <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Data Science</span>
             </div>
           </div>
           
@@ -31,20 +31,20 @@ export default function About() {
             <div className="bg-gradient-to-br from-accent/20 to-[hsl(188,94%,42%)]/20 rounded-2xl p-8 backdrop-blur-sm">
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="bg-primary/50 rounded-lg p-4">
+                  <h3 className="text-2xl font-bold text-accent">7+</h3>
+                  <p className="text-sm text-slate-400">Years Experience</p>
+                </div>
+                <div className="bg-primary/50 rounded-lg p-4">
                   <h3 className="text-2xl font-bold text-accent">10+</h3>
                   <p className="text-sm text-slate-400">Projects</p>
                 </div>
                 <div className="bg-primary/50 rounded-lg p-4">
-                  <h3 className="text-2xl font-bold text-accent">3+</h3>
-                  <p className="text-sm text-slate-400">Years Experience</p>
+                  <h3 className="text-2xl font-bold text-accent">2</h3>
+                  <p className="text-sm text-slate-400">Patents</p>
                 </div>
                 <div className="bg-primary/50 rounded-lg p-4">
-                  <h3 className="text-2xl font-bold text-accent">5+</h3>
-                  <p className="text-sm text-slate-400">Technologies</p>
-                </div>
-                <div className="bg-primary/50 rounded-lg p-4">
-                  <h3 className="text-2xl font-bold text-accent">100%</h3>
-                  <p className="text-sm text-slate-400">Dedication</p>
+                  <h3 className="text-2xl font-bold text-accent">3</h3>
+                  <p className="text-sm text-slate-400">Awards</p>
                 </div>
               </div>
             </div>

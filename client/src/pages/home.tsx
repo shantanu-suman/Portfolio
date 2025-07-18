@@ -13,10 +13,10 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
-      <Education />
       <TechStack />
       <Projects />
       <Leadership />
+      <Education />
       <Contact />
       
       {/* Footer */}

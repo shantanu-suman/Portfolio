@@ -59,12 +59,6 @@ export default function Navigation() {
                   About
                 </button>
                 <button
-                  onClick={() => scrollToSection("education")}
-                  className="hover:text-accent transition-colors duration-200"
-                >
-                  Education
-                </button>
-                <button
                   onClick={() => scrollToSection("tech")}
                   className="hover:text-accent transition-colors duration-200"
                 >
@@ -81,6 +75,12 @@ export default function Navigation() {
                   className="hover:text-accent transition-colors duration-200"
                 >
                   Experience
+                </button>
+                <button
+                  onClick={() => scrollToSection("education")}
+                  className="hover:text-accent transition-colors duration-200"
+                >
+                  Education
                 </button>
                 <button
                   onClick={() => scrollToSection("contact")}
@@ -118,12 +118,6 @@ export default function Navigation() {
                 About
               </button>
               <button
-                onClick={() => scrollToSection("education")}
-                className="block w-full text-left px-3 py-2 hover:text-accent transition-colors duration-200"
-              >
-                Education
-              </button>
-              <button
                 onClick={() => scrollToSection("tech")}
                 className="block w-full text-left px-3 py-2 hover:text-accent transition-colors duration-200"
               >
@@ -140,6 +134,12 @@ export default function Navigation() {
                 className="block w-full text-left px-3 py-2 hover:text-accent transition-colors duration-200"
               >
                 Experience
+              </button>
+              <button
+                onClick={() => scrollToSection("education")}
+                className="block w-full text-left px-3 py-2 hover:text-accent transition-colors duration-200"
+              >
+                Education
               </button>
               <button
                 onClick={() => scrollToSection("contact")}

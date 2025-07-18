@@ -6,34 +6,34 @@ export default function TechStack() {
       title: "Languages",
       icon: <Code size={24} />,
       skills: [
-        { name: "C/C++", icon: "💻" },
-        { name: "JavaScript", icon: "🟨" },
-        { name: "HTML5", icon: "🧡" },
-        { name: "CSS3", icon: "🔵" },
+        { name: "C++", icon: "💻" },
+        { name: "C++ 11", icon: "🔧" },
+        { name: "Python", icon: "🐍" },
+        { name: "Java", icon: "☕" },
         { name: "SQL", icon: "🗃️" }
       ]
     },
     {
-      title: "Frameworks & Libraries",
+      title: "Frameworks & Tools",
       icon: <Layers size={24} />,
       skills: [
-        { name: "React JS", icon: "⚛️" },
-        { name: "Node JS", icon: "🟢" },
-        { name: "Express JS", icon: "🚀" },
-        { name: "Tailwind CSS", icon: "💨" },
-        { name: "WordPress", icon: "🌐" }
+        { name: "TIA Portal", icon: "🔧" },
+        { name: "ADTF", icon: "🚗" },
+        { name: "Git", icon: "🔄" },
+        { name: "NSIS", icon: "📦" },
+        { name: "HIL Systems", icon: "🔧" }
       ]
     },
     {
-      title: "Tools & Platforms",
+      title: "Specializations",
       icon: <Settings size={24} />,
       skills: [
-        { name: "MongoDB", icon: "🍃" },
-        { name: "Firebase", icon: "🔥" },
-        { name: "Git & GitHub", icon: "🐱" },
-        { name: "VS Code", icon: "💙" },
-        { name: "Postman", icon: "📮" },
-        { name: "Google Cloud Platform", icon: "☁️" }
+        { name: "Industrial Automation", icon: "🏭" },
+        { name: "ADAS Development", icon: "🚗" },
+        { name: "CAN Gateway", icon: "🔌" },
+        { name: "Data Science", icon: "📊" },
+        { name: "Camera Calibration", icon: "📷" },
+        { name: "System Testing", icon: "🧪" }
       ]
     }
   ];

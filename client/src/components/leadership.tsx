@@ -3,32 +3,36 @@ import { CheckCircle, Trophy, Users, Calendar } from "lucide-react";
 export default function Leadership() {
   const experiences = [
     {
-      title: "Junior Partner",
-      organization: "The Apex Circle (TAC)",
-      duration: "Jan 2025 – Present",
+      title: "Senior Software Developer",
+      organization: "Siemens Technology and Services Limited, Bengaluru",
+      duration: "June 2021 – Present",
       achievements: [
-        "Participated in over 15 hackathons and technical events, collaborating with peers to build innovative solutions.",
-        "Mentored juniors by sharing knowledge, guiding them in projects, and fostering a strong tech community."
+        "Developed and maintained Onboard Compiler system, fixing bugs in various System Function Calls.",
+        "Performed comprehensive bug fixes for various Jobs in Test and Debugging environments.",
+        "Worked with industrial automation systems and contributed to ADAS development projects."
       ],
       icon: <Users size={24} />
     },
     {
-      title: "Technical Executive",
-      organization: "Computer Society of India, CU Student Branch",
-      duration: "Nov 2024 – Present",
+      title: "Software Engineer",
+      organization: "Robert Bosch Engineering and Business Solution Private Limited, Bengaluru",
+      duration: "September 2016 – June 2021",
       achievements: [
-        "Organized 5+ workshops, hackathons, and competitions to enhance student learning and engagement.",
-        "Coordinated with faculty and industry experts to bring technical opportunities to students."
+        "Developed CAN gateway for various OEM's during HIL Development phase.",
+        "Implemented Static and Online Camera Calibration systems.",
+        "Led HIL Development Gen3 project involving replaying and recording of images in mf4 format for validation.",
+        "Worked on HIL Installer development and testing including all software as a single package.",
+        "Developed various sequence validation filters and contributed to delta installer development."
       ],
       icon: <Calendar size={24} />
     },
     {
-      title: "AMCAT 2nd Rank Holder",
-      organization: "Chandigarh University",
-      duration: "Sept 2024",
+      title: "Rising Inventor Award",
+      organization: "Siemens, Bengaluru",
+      duration: "January 2024",
       achievements: [
-        "Secured 2nd rank in AMCAT among 5500+ peers, showcasing strong analytical and problem-solving skills.",
-        "Demonstrated excellence in aptitude, coding, and domain-specific assessments, outperforming competition."
+        "Received Rising Inventor award for filing decision on Patent Application.",
+        "Recognized for innovative contributions to industrial automation and software development."
       ],
       icon: <Trophy size={24} />
     }
