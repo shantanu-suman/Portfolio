@@ -28,7 +28,7 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/shantanu-kumar-suman-a92aa3102/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors duration-200">
                 <i className="fab fa-linkedin text-xl"></i>
               </a>
-              <a href="https://github.com/shantanusuman" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors duration-200">
+              <a href="https://github.com/shantanu-suman" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors duration-200">
                 <i className="fab fa-github text-xl"></i>
               </a>
               <a href="mailto:shantanu.suman@gmail.com" className="text-slate-400 hover:text-accent transition-colors duration-200">

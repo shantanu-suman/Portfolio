@@ -106,7 +106,7 @@ export default function Hero() {
               <Linkedin size={24} />
             </motion.a>
             <motion.a
-              href="https://github.com/shantanusuman"
+              href="https://github.com/shantanu-suman"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-accent transition-colors duration-200"
