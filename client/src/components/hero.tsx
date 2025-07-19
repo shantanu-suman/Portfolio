@@ -56,8 +56,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            Senior Software Developer with 7+ years of experience in Industrial automation and ADAS development. 
-            Specialized in C++ development with a passion for innovation and patent-worthy solutions.
+  	 Senior Software Developer with 9+ years of experience in Industrial Automation and ADAS development. 
+         Specialized in C++, Java, and Python with a passion for innovation and patent-worthy solutions.
+         Experienced in Deep Learning and NLP at Siemens, focusing on fine-tuning AI models for real-world impact.
           </motion.p>
           
           {/* CTA Buttons */}
