@@ -18,16 +18,18 @@ export default function About() {
             viewport={{ once: true }}
           >
             <motion.p 
-              className="text-lg text-slate-300 leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              Hello! I'm Shantanu, a passionate Senior Software Developer with over 7 years of experience in 
-              Industrial automation and ADAS development. With specialization in C++ development and a strong 
-              academic background, I create innovative solutions that make a real impact.
-            </motion.p>
+  className="text-lg text-slate-300 leading-relaxed"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+  viewport={{ once: true }}
+>
+  Hello! I'm Shantanu, a passionate <span className="font-semibold text-white">Senior Software Developer</span> with over <span className="font-semibold text-white">7 years of experience</span> in 
+  <span className="font-semibold text-white"> Industrial Automation</span> and <span className="font-semibold text-white">ADAS development</span>. Specializing in <span className="font-semibold text-white">C++ development</span>, I build innovative solutions that deliver real-world impact.
+  <br /><br />
+  I'm currently pursuing an <span className="font-semibold text-white">M.Tech in Data Science</span> at <span className="font-semibold text-white">BITS Pilani</span> while working at <span className="font-semibold text-white">Siemens</span>. I've been recognized as a <span className="text-yellow-400 font-semibold">Rising Inventor</span> for my patent contributions and awarded for my <span className="font-semibold text-white">proactive excellence in CAN Gateway development</span>.
+</motion.p>
+
             <motion.p 
               className="text-lg text-slate-300 leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
