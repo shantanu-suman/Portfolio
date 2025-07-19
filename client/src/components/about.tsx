@@ -70,7 +70,7 @@ export default function About() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-2xl font-bold text-accent">7+</h3>
+                  <h3 className="text-2xl font-bold text-accent">9+</h3>
                   <p className="text-sm text-slate-400">Years Experience</p>
                 </motion.div>
                 <motion.div 
