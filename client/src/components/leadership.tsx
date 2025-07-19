@@ -38,7 +38,7 @@ export default function Leadership() {
         "Received Rising Inventor award for filing decision on Patent Application.",
         "Recognized for innovative contributions to industrial automation and software development.",
       ],
-      icon: <Trophy size={24} className="text-slate-200" />,
+      icon: <Trophy size={24} className="text-yellow-500" />,
     },
     {
       title: "Silver Award",
@@ -48,18 +48,11 @@ export default function Leadership() {
         "Honored for proactive contributions in CAN Gateway development.",
         "Praised for cross-functional collaboration and timely delivery in embedded automotive projects.",
       ],
-      icon: <Trophy size={24} className="text-slate-200" />,
+      icon: <Trophy size={24} className="text-yellow-500" />,
     },
   ];
 
-  const silverAchievements = new Set([
-    "Received Rising Inventor award for filing decision on Patent Application.",
-    "Recognized for innovative contributions to industrial automation and software development.",
-    "Honored for proactive contributions in CAN Gateway development.",
-    "Praised for cross-functional collaboration and timely delivery in embedded automotive projects.",
-  ]);
-
-  const renderSection = (sectionTitle: string, items: any[]) => (
+  const renderSection = (sectionTitle: string, items: any[], isAwardSection = false) => (
     <>
       <div className="text-center mb-16">
         <h2 className="text-4xl sm:text-5xl font-bold gradient-text mb-4">{sectionTitle}</h2>
@@ -125,13 +118,16 @@ export default function Leadership() {
                   className="flex items-start gap-3"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.2 + achievementIndex * 0.1 + 0.5 }}
+                  transition={{
+                    duration: 0.4,
+                    delay: index * 0.2 + achievementIndex * 0.1 + 0.5,
+                  }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.02 }}
                 >
                   <motion.div className="text-accent mt-1" whileHover={{ scale: 1.2 }}>
-                    {silverAchievements.has(achievement) ? (
-                      <Trophy size={20} className="text-slate-200" />
+                    {isAwardSection ? (
+                      <Trophy size={20} className="text-white" />
                     ) : (
                       <CheckCircle size={20} />
                     )}
@@ -151,7 +147,7 @@ export default function Leadership() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {renderSection("Experience", experiences)}
         <div className="mt-24" />
-        {renderSection("Awards", awards)}
+        {renderSection("Awards", awards, true)}
       </div>
     </section>
   );
