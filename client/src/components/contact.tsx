@@ -86,7 +86,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white">LinkedIn</h3>
-                <p className="text-slate-400">linkedin.com/in/shantanusuman</p>
+                <p className="text-slate-400">linkedin.com/in/shantanukumarsuman</p>
               </div>
             </div>
             
