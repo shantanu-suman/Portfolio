@@ -13,7 +13,6 @@ export default function Leadership() {
         "Worked with industrial automation systems and contributed to ADAS development projects.",
       ],
       icon: <Users size={24} />,
-      bulletIcon: <CheckCircle size={20} />,
     },
     {
       title: "Software Engineer",
@@ -27,7 +26,6 @@ export default function Leadership() {
         "Developed various sequence validation filters and contributed to delta installer development.",
       ],
       icon: <Calendar size={24} />,
-      bulletIcon: <CheckCircle size={20} />,
     },
   ];
 
@@ -40,8 +38,7 @@ export default function Leadership() {
         "Received Rising Inventor award for filing decision on Patent Application.",
         "Recognized for innovative contributions to industrial automation and software development.",
       ],
-      icon: <Trophy size={24} className="text-yellow-500" />,
-      bulletIcon: <Trophy size={20} className="text-yellow-500" />,
+      icon: <Trophy size={24} className="text-slate-200" />,
     },
     {
       title: "Silver Award",
@@ -51,10 +48,16 @@ export default function Leadership() {
         "Honored for proactive contributions in CAN Gateway development.",
         "Praised for cross-functional collaboration and timely delivery in embedded automotive projects.",
       ],
-      icon: <Trophy size={24} className="text-yellow-500" />,
-      bulletIcon: <Trophy size={20} className="text-yellow-500" />,
+      icon: <Trophy size={24} className="text-slate-200" />,
     },
   ];
+
+  const silverAchievements = new Set([
+    "Received Rising Inventor award for filing decision on Patent Application.",
+    "Recognized for innovative contributions to industrial automation and software development.",
+    "Honored for proactive contributions in CAN Gateway development.",
+    "Praised for cross-functional collaboration and timely delivery in embedded automotive projects.",
+  ]);
 
   const renderSection = (sectionTitle: string, items: any[]) => (
     <>
@@ -127,7 +130,11 @@ export default function Leadership() {
                   whileHover={{ scale: 1.02 }}
                 >
                   <motion.div className="text-accent mt-1" whileHover={{ scale: 1.2 }}>
-                    {exp.bulletIcon}
+                    {silverAchievements.has(achievement) ? (
+                      <Trophy size={20} className="text-slate-200" />
+                    ) : (
+                      <CheckCircle size={20} />
+                    )}
                   </motion.div>
                   <span className="text-slate-300 leading-relaxed">{achievement}</span>
                 </motion.li>
