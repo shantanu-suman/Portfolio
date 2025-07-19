@@ -125,7 +125,7 @@ export default function Leadership() {
                       className="text-accent mt-1"
                       whileHover={{ scale: 1.2 }}
                     >
-                      {exp.title === "Rising Inventor Award" ? (
+                      {exp.title === "Award" ? (
                         <Trophy size={20} className="text-yellow-500" />
                       ) : (
                         <CheckCircle size={20} />
