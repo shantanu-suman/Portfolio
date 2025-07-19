@@ -28,15 +28,26 @@ export default function Leadership() {
       icon: <Calendar size={24} />
     },
     {
-      title: "Rising Inventor Award",
-      organization: "Siemens, Bengaluru",
-      duration: "January 2024",
-      achievements: [
-        "Received Rising Inventor award for filing decision on Patent Application.",
-        "Recognized for innovative contributions to industrial automation and software development."
-      ],
-      icon: <Trophy size={24} />
-    }
+  title: "Rising Inventor Award",
+  organization: "Siemens, Bengaluru",
+  duration: "January 2024",
+  achievements: [
+    "Received Rising Inventor award for filing decision on Patent Application.",
+    "Recognized for innovative contributions to industrial automation and software development."
+  ],
+  icon: <Trophy size={24} />
+},
+{
+  title: "Silver Award",
+  organization: "Bosch, Bengaluru",
+  duration: "June 2019",
+  achievements: [
+    "Honored for proactive contributions in CAN Gateway development.",
+    "Praised for cross-functional collaboration and timely delivery in embedded automotive projects."
+  ],
+  icon: <Trophy size={24} />
+}
+
   ];
 
   return (
