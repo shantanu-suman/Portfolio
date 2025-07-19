@@ -97,7 +97,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 1.2 }}
           >
             <motion.a
-              href="https://linkedin.com/in/shantanusuman"
+              href="https://www.linkedin.com/in/shantanu-kumar-suman-a92aa3102/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-accent transition-colors duration-200"

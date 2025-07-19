@@ -25,7 +25,7 @@ export default function Home() {
           <div className="text-center">
             <p className="text-slate-400 mb-4">© 2025 Shantanu Suman. All rights reserved.</p>
             <div className="flex justify-center space-x-6">
-              <a href="https://linkedin.com/in/shantanusuman" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors duration-200">
+              <a href="https://www.linkedin.com/in/shantanu-kumar-suman-a92aa3102/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors duration-200">
                 <i className="fab fa-linkedin text-xl"></i>
               </a>
               <a href="https://github.com/shantanusuman" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors duration-200">
