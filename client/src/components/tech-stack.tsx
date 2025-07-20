@@ -30,7 +30,6 @@ export default function TechStack() {
         { name: "NLP & Deep Learning", icon: "🧠" },
         { name: "Industrial Automation", icon: "🏭" },
         { name: "Embedded Systems", icon: "🚗" },
-        { name: "Data Science", icon: "📊" },
         { name: "Windows Installers", icon: "🔌" },
       ]
     }
