@@ -76,7 +76,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white">Email</h3>
-                <p className="text-slate-400">shantanu.suman@gmail.com</p>
+                <p className="text-slate-400">shantanukumarsuman25@outlook.com</p>
               </div>
             </div>
             
@@ -102,7 +102,7 @@ export default function Contact() {
             
             <div className="text-center mt-8">
               <a
-                href="mailto:shantanu.suman@gmail.com"
+                href="mailto:shantanukumarsuman25@outlook.com"
                 className="bg-accent hover:bg-accent/80 text-primary px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 inline-flex items-center gap-2"
               >
                 <Mail size={20} />
@@ -123,7 +123,7 @@ export default function Contact() {
                   placeholder="Your name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="bg-primary/50 border-slate-700 text-white placeholder-slate-400 focus:border-accent focus:ring-accent/20"
+                  className="bg-white text-black border-slate-300 placeholder-slate-500 focus:border-accent focus:ring-accent/20"
                 />
               </div>
               
@@ -136,7 +136,7 @@ export default function Contact() {
                   placeholder="your@email.com"
                   value={formData.email}
                   onChange={handleChange}
-                  className="bg-primary/50 border-slate-700 text-white placeholder-slate-400 focus:border-accent focus:ring-accent/20"
+                  className="bg-white text-black border-slate-300 placeholder-slate-500 focus:border-accent focus:ring-accent/20"
                 />
               </div>
               
@@ -149,7 +149,7 @@ export default function Contact() {
                   placeholder="Your message..."
                   value={formData.message}
                   onChange={handleChange}
-                  className="bg-primary/50 border-slate-700 text-white placeholder-slate-400 focus:border-accent focus:ring-accent/20"
+                  className="bg-white text-black border-slate-300 placeholder-slate-500 focus:border-accent focus:ring-accent/20"
                 />
               </div>
               
