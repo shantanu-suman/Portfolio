@@ -38,8 +38,9 @@ export default function TechStack() {
 const coreCompetencies = [
   "Algorithm Design & Optimization",
   "Technical Documentation & Stakeholder Communication",
-  "Technical Talks & Developer Evangelism",
+  "Version Control & Branching Strategy",
   "Cross-Functional Team Leadership",
+  "Software Architecture & Design Patterns",
   "Agile SDLC (Scrum, CI/CD, Sprint Planning)"
 ];
 
