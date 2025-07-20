@@ -7,8 +7,7 @@ export default function TechStack() {
       title: "Languages",
       icon: <Code size={24} />,
       skills: [
-        { name: "C++", icon: "💻" },
-        { name: "C++ 11", icon: "🔧" },
+        { name: "Advance C++", icon: "💻" },
         { name: "Python", icon: "🐍" },
         { name: "Java", icon: "☕" },
         { name: "SQL", icon: "🗃️" }
@@ -18,23 +17,21 @@ export default function TechStack() {
       title: "Frameworks & Tools",
       icon: <Layers size={24} />,
       skills: [
-        { name: "TIA Portal", icon: "🔧" },
-        { name: "ADTF", icon: "🚗" },
-        { name: "Git", icon: "🔄" },
+        { name: "Jenkins & GitHub", icon: "🚀" },
+        { name: "CMake & bazel", icon: "⚙️" },
+        { name: "TensorFlow / PyTorch", icon: "🔥" },
         { name: "NSIS", icon: "📦" },
-        { name: "HIL Systems", icon: "🔧" }
       ]
     },
     {
       title: "Specializations",
       icon: <Settings size={24} />,
       skills: [
+        { name: "NLP & Deep Learning", icon: "🧠" },
         { name: "Industrial Automation", icon: "🏭" },
-        { name: "ADAS Development", icon: "🚗" },
-        { name: "CAN Gateway", icon: "🔌" },
+        { name: "Embedded Systems", icon: "🚗" },
         { name: "Data Science", icon: "📊" },
-        { name: "Camera Calibration", icon: "📷" },
-        { name: "System Testing", icon: "🧪" }
+        { name: "Windows Installers", icon: "🔌" },
       ]
     }
   ];
