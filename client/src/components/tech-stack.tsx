@@ -35,14 +35,14 @@ export default function TechStack() {
     }
   ];
 
-  const coreCompetencies = [
-    "Problem Solving",
-    "Presentations",
-    "Oratory",
-    "Team Leadership",
-    "Event Hosting",
-    "Agile Methodologies"
-  ];
+const coreCompetencies = [
+  "Algorithm Design & Optimization",
+  "Technical Documentation & Stakeholder Communication",
+  "Technical Talks & Developer Evangelism",
+  "Cross-Functional Team Leadership",
+  "Agile SDLC (Scrum, CI/CD, Sprint Planning)"
+];
+
 
   return (
     <section id="tech" className="py-20 bg-secondary/50">
