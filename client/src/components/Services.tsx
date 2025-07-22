@@ -1,56 +1,63 @@
-import { FaPaintBrush, FaCode, FaBrain, FaChartBar, FaMicrochip } from "react-icons/fa";
+// components/Services.tsx
 
-const services = [
-  {
-    icon: <FaPaintBrush />,
-    title: "UI/UX Design",
-    desc: "Crafting intuitive, user‑friendly interfaces with vibrant aesthetics that reflect your brand identity.",
-  },
-  {
-    icon: <FaCode />,
-    title: "Web Development",
-    desc: "Building fast, responsive React and Tailwind websites with seamless animations and interactions.",
-  },
-  {
-    icon: <FaBrain />,
-    title: "AI/ML Integration",
-    desc: "Implementing intelligent AI features—NLP, computer vision, LLM APIs—for smarter user experiences.",
-  },
-  {
-    icon: <FaChartBar />,
-    title: "Data Dashboards",
-    desc: "Designing real‑time, interactive dashboards and analytics visualizations to drive insights.",
-  },
-  {
-    icon: <FaMicrochip />,
-    title: "Embedded & IoT",
-    desc: "Developing C/C++, CAN Bus, PLC, and automation systems with edge‑computing expertise.",
-  },
-];
+import { FaCode, FaChalkboardTeacher, FaBrain } from "react-icons/fa";
+import { SiOpencv, SiTensorflow, SiReact } from "react-icons/si";
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 bg-gradient-to-br from-yellow-100 to-yellow-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 bg-background text-foreground">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-bold gradient-text mb-4">What I Do</h2>
-          <p className="text-gray-700 max-w-2xl mx-auto">
-            Offering a range of services from design and development to AI solutions, IoT systems, and data visualization.
+          <h2 className="text-4xl font-bold mb-4">My Services</h2>
+          <p className="text-slate-400 text-lg">
+            Leveraging years of experience in AI, Embedded Systems, and Web Technologies.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((svc, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 p-6 text-center"
-            >
-              <div className="text-5xl text-yellow-600 mb-4">{svc.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{svc.title}</h3>
-              <p className="text-gray-600">{svc.desc}</p>
-            </div>
-          ))}
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+          <ServiceCard
+            Icon={FaBrain}
+            title="AI/ML Solutions"
+            description="Custom ML pipelines, model fine-tuning, and production-ready AI solutions using PyTorch, TensorFlow, and Scikit-learn."
+          />
+          <ServiceCard
+            Icon={SiOpencv}
+            title="Computer Vision"
+            description="End-to-end vision-based solutions, especially in real-time systems, behavior analysis, and OpenCV-based applications."
+          />
+          <ServiceCard
+            Icon={FaCode}
+            title="Embedded Systems"
+            description="10+ years of experience in IoT, C/C++, industrial automation, PLCs, and low-level optimization."
+          />
+          <ServiceCard
+            Icon={SiReact}
+            title="Web App Development"
+            description="Building fast, scalable, and responsive web apps with React, Next.js, TailwindCSS, and REST APIs."
+          />
+          <ServiceCard
+            Icon={FaChalkboardTeacher}
+            title="Mentorship & Training"
+            description="Guidance on M.Tech/Ph.D. research, project development, and ML/IoT interview preparation."
+          />
+          <ServiceCard
+            Icon={SiTensorflow}
+            title="Research Prototyping"
+            description="Rapid prototyping of academic and industrial research ideas in ML, NLP, and signal processing."
+          />
         </div>
       </div>
     </section>
+  );
+}
+
+function ServiceCard({ Icon, title, description }: { Icon: any; title: string; description: string }) {
+  return (
+    <div className="bg-secondary/30 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 border border-secondary/40">
+      <div className="text-accent mb-4">
+        <Icon className="text-4xl" />
+      </div>
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-slate-400">{description}</p>
+    </div>
   );
 }
