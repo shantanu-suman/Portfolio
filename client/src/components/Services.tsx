@@ -27,7 +27,7 @@ export default function Services() {
           <ServiceCard
             Icon={FaCode}
             title="Embedded Systems"
-            description="10+ years of experience in IoT, C/C++, industrial automation, PLCs, and low-level optimization."
+            description="9+ years of experience in IoT, C/C++, industrial automation, PLCs, and low-level optimization."
           />
           <ServiceCard
             Icon={SiReact}
