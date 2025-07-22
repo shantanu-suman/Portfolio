@@ -6,6 +6,7 @@ import TechStack from "@/components/tech-stack";
 import Projects from "@/components/projects";
 import Leadership from "@/components/leadership";
 import Contact from "@/components/contact";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
       <Projects />
       <Leadership />
       <Education />
+      <Services />
       <Contact />
-      
       {/* Footer */}
       <footer className="bg-secondary/50 py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,3 +42,4 @@ export default function Home() {
     </div>
   );
 }
+
