@@ -14,11 +14,11 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
+      <Services />
       <TechStack />
       <Projects />
       <Leadership />
       <Education />
-      <Services />
       <Contact />
       {/* Footer */}
       <footer className="bg-secondary/50 py-12">

@@ -76,6 +76,21 @@ export default function Navigation() {
                   />
                 </motion.button>
                 <motion.button
+                onClick={() => scrollToSection("Services")}
+                className="hover:text-accent transition-colors duration-200 relative"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                >
+                Services
+                <motion.div
+                className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent origin-left"
+                initial={{ scaleX: 0 }}
+                whileHover={{ scaleX: 1 }}
+                transition={{ duration: 0.3 }}
+                />
+                </motion.button>
+
+                <motion.button
                   onClick={() => scrollToSection("tech")}
                   className="hover:text-accent transition-colors duration-200 relative"
                   whileHover={{ scale: 1.05, y: -2 }}
@@ -160,6 +175,13 @@ export default function Navigation() {
               >
                 Home
               </button>
+              <button
+              onClick={() => scrollToSection("Services")}
+              className="block w-full text-left px-3 py-2 hover:text-accent transition-colors duration-200"
+              >
+              Services
+              </button>
+
               <button
                 onClick={() => scrollToSection("about")}
                 className="block w-full text-left px-3 py-2 hover:text-accent transition-colors duration-200"
