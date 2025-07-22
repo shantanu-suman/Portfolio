@@ -42,14 +42,14 @@ export default function Hero() {
           >
             <span className="gradient-text">Shantanu Suman</span>
           </motion.h1>
-          <motion.h2 
+          <motion.h3 
             className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-300 mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             Engineer. Innovator. Architect of Smart Automation.
-          </motion.h2>
+          </motion.h3>
           <motion.p 
             className="text-lg sm:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
