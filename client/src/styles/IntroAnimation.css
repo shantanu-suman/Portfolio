@@ -1,0 +1,60 @@
+.logo-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: glow 3s ease-in-out forwards;
+  pointer-events: none;
+}
+
+.logo-wrapper.minimized {
+  animation: moveToCorner 1s ease-in-out forwards;
+}
+
+.diamond {
+  width: 100px;
+  height: 100px;
+  background: #1f1f1f;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0px #00fff7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diamond span {
+  transform: rotate(-45deg);
+  font-size: 56px;
+  color: #00fff7;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0;
+    box-shadow: 0 0 0px #00fff7;
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 30px #00fff7;
+  }
+  100% {
+    box-shadow: 0 0 60px #00fff7;
+  }
+}
+
+@keyframes moveToCorner {
+  to {
+    top: 20px;
+    left: 20px;
+    transform: scale(0.4);
+  }
+}
