@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./IntroAnimation.css";
+import "../styles/IntroAnimation.css";
 
 interface Props {
   onComplete: () => void;
