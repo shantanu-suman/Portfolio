@@ -1,25 +1,31 @@
-// src/components/IntroAnimation.tsx
+import { useEffect, useState } from "react";
+import "./IntroAnimation.css";
 
-import React, { useEffect, useState } from "react";
-import "../styles/IntroAnimation.css";
+interface Props {
+  onComplete: () => void;
+}
 
-const IntroAnimation: React.FC = () => {
-  const [hide, setHide] = useState(false);
+const IntroAnimation: React.FC<Props> = ({ onComplete }) => {
+  const [moveToCorner, setMoveToCorner] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setHide(true);
-    }, 5000); // hide after 5 seconds
-    return () => clearTimeout(timer);
-  }, []);
+    const timer1 = setTimeout(() => {
+      setMoveToCorner(true);
+    }, 2000); // duration of logo stay in center
 
-  if (hide) return null;
+    const timer2 = setTimeout(() => {
+      onComplete();
+    }, 3500); // duration until full animation completes
+
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
+  }, [onComplete]);
 
   return (
-    <div className="logo-wrapper">
-      <div className="diamond">
-        <span>S</span>
-      </div>
+    <div className={`intro-container ${moveToCorner ? "corner" : ""}`}>
+      <img src="/s-logo.png" alt="Logo" className="intro-logo" />
     </div>
   );
 };

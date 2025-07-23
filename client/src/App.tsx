@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
@@ -17,12 +18,18 @@ function Router() {
 }
 
 function App() {
+  const [animationCompleted, setAnimationCompleted] = useState(false);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <IntroAnimation /> {/* Add animation here */}
-        <Toaster />
-        <Router />
+        <IntroAnimation onComplete={() => setAnimationCompleted(true)} />
+        {animationCompleted && (
+          <>
+            <Toaster />
+            <Router />
+          </>
+        )}
       </TooltipProvider>
     </QueryClientProvider>
   );
