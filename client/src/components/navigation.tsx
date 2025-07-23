@@ -76,7 +76,7 @@ export default function Navigation() {
                   />
                 </motion.button>
                 <motion.button
-                onClick={() => scrollToSection("Services")}
+                onClick={() => scrollToSection("services")}
                 className="hover:text-accent transition-colors duration-200 relative"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -176,7 +176,7 @@ export default function Navigation() {
                 Home
               </button>
               <button
-              onClick={() => scrollToSection("Services")}
+              onClick={() => scrollToSection("services")}
               className="block w-full text-left px-3 py-2 hover:text-accent transition-colors duration-200"
               >
               Services
