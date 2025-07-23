@@ -1,7 +1,7 @@
 // src/components/IntroAnimation.tsx
 
 import React, { useEffect, useState } from "react";
-import "./IntroAnimation.css";
+import "../styles/IntroAnimation.css";
 
 const IntroAnimation: React.FC = () => {
   const [hide, setHide] = useState(false);
