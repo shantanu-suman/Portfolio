@@ -19,17 +19,18 @@ export default function Contact() {
 
   const contactMutation = useMutation({
     mutationFn: async (data: typeof formData) => {
-      // Map to EmailJS template variable names
       return await emailjs.send(
-        "service_3hucoqj", // Your EmailJS Service ID
-        "template_1bbanyp", // Your EmailJS Template ID
-        {
-          from_name: data.name,   // matches {{from_name}} in template
-          reply_to: data.email,   // matches {{reply_to}} in template
-          message: data.message   // matches {{message}} in template
-        },
-        "fXOaNrHl5ntrzbCBB" // Your EmailJS Public Key
-      );
+            "service_3hucoqj",
+            "template_1bbanyp",
+     {
+    name: data.name,
+    email: data.email,    // Matches {{email}} in template
+    time: new Date().toLocaleString(),
+    message: data.message
+    },
+  "fXOaNrHl5ntrzbCBB"
+);
+
     },
     onSuccess: () => {
       toast({
