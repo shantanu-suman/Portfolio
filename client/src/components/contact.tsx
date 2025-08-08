@@ -20,16 +20,17 @@ export default function Contact() {
   const contactMutation = useMutation({
     mutationFn: async (data: typeof formData) => {
       return await emailjs.send(
-            "service_3hucoqj",
-            "template_1bbanyp",
-     {
+  "service_3hucoqj", 
+  "template_1bbanyp", 
+  {
     name: data.name,
-    email: data.email,    // Matches {{email}} in template
+    email: data.email,
     time: new Date().toLocaleString(),
     message: data.message
-    },
+  },
   "fXOaNrHl5ntrzbCBB"
 );
+
 
     },
     onSuccess: () => {
