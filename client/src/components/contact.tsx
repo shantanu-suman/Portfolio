@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -14,11 +14,17 @@ export default function Contact() {
     email: "",
     message: ""
   });
+
   const { toast } = useToast();
 
   const contactMutation = useMutation({
     mutationFn: async (data: typeof formData) => {
-      return await apiRequest("POST", "/api/contact", data);
+      return await emailjs.send(
+        "service_3hucoqj",   // e.g. service_abcd123
+        "YOUR_TEMPLATE_ID",  // e.g. template_xyz456
+        data,
+        "fXOaNrHl5ntrzbCBB"    // e.g. XyZAbCdEfGh123456
+      );
     },
     onSuccess: () => {
       toast({
@@ -27,7 +33,7 @@ export default function Contact() {
       });
       setFormData({ name: "", email: "", message: "" });
     },
-    onError: (error) => {
+    onError: () => {
       toast({
         title: "Error sending message",
         description: "Please try again later.",
@@ -48,7 +54,9 @@ export default function Contact() {
     contactMutation.mutate(formData);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -59,14 +67,17 @@ export default function Contact() {
     <section id="contact" className="py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold gradient-text mb-4">Get In Touch</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold gradient-text mb-4">
+            Get In Touch
+          </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent mx-auto mb-8"></div>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            I'm currently open to new opportunities and collaborations. Whether you have a project in mind, 
-            a question, or just want to say hi, my inbox is always open. I'll try my best to get back to you!
+            I'm currently open to new opportunities and collaborations. Whether
+            you have a project in mind, a question, or just want to say hi, my
+            inbox is always open. I'll try my best to get back to you!
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Contact Info */}
           <div className="space-y-6">
@@ -76,20 +87,24 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white">Email</h3>
-                <p className="text-slate-400">shantanukumarsuman25@outlook.com</p>
+                <p className="text-slate-400">
+                  shantanukumarsuman25@outlook.com
+                </p>
               </div>
             </div>
-            
+
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
                 <Linkedin className="text-accent" size={20} />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white">LinkedIn</h3>
-                <p className="text-slate-400">linkedin.com/in/shantanukumarsuman</p>
+                <p className="text-slate-400">
+                  linkedin.com/in/shantanukumarsuman
+                </p>
               </div>
             </div>
-            
+
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
                 <Github className="text-accent" size={20} />
@@ -99,7 +114,7 @@ export default function Contact() {
                 <p className="text-slate-400">github.com/shantanusuman</p>
               </div>
             </div>
-            
+
             <div className="text-center mt-8">
               <a
                 href="mailto:shantanukumarsuman25@outlook.com"
@@ -110,12 +125,14 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div className="bg-secondary/50 rounded-xl p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <Label htmlFor="name" className="text-slate-300 mb-2">Name</Label>
+                <Label htmlFor="name" className="text-slate-300 mb-2">
+                  Name
+                </Label>
                 <Input
                   id="name"
                   name="name"
@@ -126,9 +143,11 @@ export default function Contact() {
                   className="bg-white text-black border-slate-300 placeholder-slate-500 focus:border-accent focus:ring-accent/20"
                 />
               </div>
-              
+
               <div>
-                <Label htmlFor="email" className="text-slate-300 mb-2">Email</Label>
+                <Label htmlFor="email" className="text-slate-300 mb-2">
+                  Email
+                </Label>
                 <Input
                   id="email"
                   name="email"
@@ -139,9 +158,11 @@ export default function Contact() {
                   className="bg-white text-black border-slate-300 placeholder-slate-500 focus:border-accent focus:ring-accent/20"
                 />
               </div>
-              
+
               <div>
-                <Label htmlFor="message" className="text-slate-300 mb-2">Message</Label>
+                <Label htmlFor="message" className="text-slate-300 mb-2">
+                  Message
+                </Label>
                 <Textarea
                   id="message"
                   name="message"
@@ -152,7 +173,7 @@ export default function Contact() {
                   className="bg-white text-black border-slate-300 placeholder-slate-500 focus:border-accent focus:ring-accent/20"
                 />
               </div>
-              
+
               <Button
                 type="submit"
                 disabled={contactMutation.isPending}
